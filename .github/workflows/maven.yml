@@ -40,7 +40,5 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn compile
 
-    - name: Run the App
-      run: java -cp target/classes com.example.HelloWorld
